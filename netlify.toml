@@ -1,7 +1,7 @@
 # Redirect-only deploy. This branch exists solely to 301 the old Netlify
-# domain (aniketlodh.netlify.app) to the live site on Vercel. Do not merge
-# into v2 — it intentionally contains no application code so Netlify performs
-# no framework build.
+# domain (premium-coffee-by-aniket-lodh.netlify.app) to the live site at
+# brew.alodh.in. Do not merge into code — it intentionally contains no
+# application code so Netlify performs no framework build.
 
 [build]
 publish = "dist"
@@ -9,6 +9,6 @@ command = "true"
 
 [[redirects]]
 from = "/*"
-to = "https://portfolio.alodh.in/:splat"
+to = "https://brew.alodh.in/:splat"
 status = 301
 force = true
