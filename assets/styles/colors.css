@@ -1,10 +1,12 @@
 :root {
     --header-height: 3.5rem;
 
-    /*COLORS*/
+    /*========== COLORS ==========*/
     --first-color: hsl(36, 72%, 48%);
     --first-color-alt: hsl(36, 72%, 44%);
+    --first-color-light: hsl(36, 80%, 58%);
     --black-color: hsl(206, 12%, 12%);
+    --black-color-light: hsl(206, 5%, 24%);
     --card-color: hsl(0, 0%, 90%);
     --title-color: hsl(206, 12%, 12%);
     --text-color: hsl(206, 4%, 42%);
@@ -12,35 +14,73 @@
     --body-color: hsl(206, 4%, 97%);
     --container-color: #fff;
 
-    /*FONTS AND TYPOGRAPHY*/
-    /*.5rem = 8px*/
-    --body-font: 'Sora', sans-serif;
-    --biggest-font-size: 2.25rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    /*========== GRADIENTS & SHADOWS ==========*/
+    --hero-gradient: linear-gradient(160deg, hsl(206, 5%, 24%) -4%, hsl(206, 12%, 12%) 46%);
+    --shadow-small: 0 4px 12px hsla(206, 4%, 4%, .12);
+    --shadow-medium: 0 12px 32px hsla(206, 12%, 8%, .15);
 
-    /*FONT WEIGHT*/
+    /*========== TYPOGRAPHY ==========*/
+    /* Fluid type: scales smoothly from small phones up to large desktops/QHD */
+    --body-font: 'Sora', sans-serif;
+    --biggest-font-size: clamp(2.25rem, 1.45rem + 3.6vw, 4rem);
+    --h1-font-size: clamp(1.5rem, 1.15rem + 1.55vw, 2.75rem);
+    --h2-font-size: clamp(1.25rem, 1.07rem + 0.8vw, 1.85rem);
+    --h3-font-size: clamp(1rem, 0.93rem + 0.32vw, 1.4rem);
+    --normal-font-size: clamp(0.938rem, 0.9rem + 0.18vw, 1.15rem);
+    --small-font-size: clamp(0.813rem, 0.78rem + 0.15vw, 1rem);
+    --smaller-font-size: clamp(0.75rem, 0.72rem + 0.12vw, 0.9rem);
+
+    /*========== FONT WEIGHT ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
     --font-bold: 700;
 
-    /*z-index*/
+    /*========== LAYOUT ==========*/
+    --container-width: 1124px;
+    --radius: .5rem;
+
+    /*========== Z-INDEX ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
-
 }
 
-@media screen and (min-width: 968px) {
+/*
+ * Ultra-large displays (QHD / 4K).
+ * Below this the fluid clamp() values above already cover phones → desktop.
+ * Here we widen the container and lift the type/element ceilings so content
+ * does not become a tiny strip in the middle of a huge screen.
+ */
+@media screen and (min-width: 1600px) {
     :root {
-        --biggest-font-size: 3.5rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
+        --container-width: 1320px;
     }
 }
 
+@media screen and (min-width: 2200px) {
+    :root {
+        --header-height: 4.5rem;
+        --container-width: 1600px;
+        --biggest-font-size: 5rem;
+        --h1-font-size: 3.25rem;
+        --h2-font-size: 2.1rem;
+        --h3-font-size: 1.55rem;
+        --normal-font-size: 1.3rem;
+        --small-font-size: 1.1rem;
+        --smaller-font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 3200px) {
+    :root {
+        --header-height: 5.5rem;
+        --container-width: 2200px;
+        --biggest-font-size: 6.5rem;
+        --h1-font-size: 4.25rem;
+        --h2-font-size: 2.75rem;
+        --h3-font-size: 2rem;
+        --normal-font-size: 1.6rem;
+        --small-font-size: 1.35rem;
+        --smaller-font-size: 1.2rem;
+    }
+}

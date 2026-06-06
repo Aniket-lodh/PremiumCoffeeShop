@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
-    <title>Premium Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#1c2024">
+    <meta name="description" content="Premium Coffee — choose your favourite premium coffees, cakes and delicacies, freshly prepared with the finest quality ingredients.">
+    <title>Premium Coffee — Choose Your Favourite Coffee</title>
     <!--    LINKING FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!--    LINKING THE STYLESHEETS-->
     <link rel="stylesheet" href="./assets/fonts/remixicon.css">
@@ -44,6 +46,9 @@
                 </li>
                 <li class="nav__item">
                     <a href="#blog" class="nav__link">Blog</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#testimonial" class="nav__link">Reviews</a>
                 </li>
             </ul>
             <div class="nav__close" id="nav-close">
@@ -88,7 +93,36 @@
                 </a>
             </div>
         </div>
-        <img src="assets/images/home.png" alt="home" class="home__img">
+        <img src="assets/images/home.png" alt="A premium pour-over coffee being brewed" class="home__img">
+    </section>
+
+    <!--=========================== FEATURES ===============================-->
+    <section class="features section">
+        <div class="features__container container grid">
+            <article class="features__item reveal">
+                <i class="ri-leaf-line features__icon"></i>
+                <h3 class="features__title">Premium Beans</h3>
+                <p class="features__description">Ethically sourced single-origin beans selected by hand.</p>
+            </article>
+
+            <article class="features__item reveal">
+                <i class="ri-fire-line features__icon"></i>
+                <h3 class="features__title">Freshly Roasted</h3>
+                <p class="features__description">Roasted in small batches to lock in rich aroma and flavour.</p>
+            </article>
+
+            <article class="features__item reveal">
+                <i class="ri-truck-line features__icon"></i>
+                <h3 class="features__title">Fast Delivery</h3>
+                <p class="features__description">Free, carbon-neutral shipping on every order over $25.</p>
+            </article>
+
+            <article class="features__item reveal">
+                <i class="ri-customer-service-2-line features__icon"></i>
+                <h3 class="features__title">24/7 Support</h3>
+                <p class="features__description">Our baristas are here to help you anytime, any day.</p>
+            </article>
+        </div>
     </section>
 
     <!--=========================== ESPECIALLY ===============================-->
@@ -103,20 +137,20 @@
                 </div>
             </div>
             <div class="specialty__category">
-                <div class="specialty__group specialty__line">
-                    <img src="assets/images/specialty1.png" alt="SeeMore" class="specialty__img">
+                <div class="specialty__group specialty__line reveal">
+                    <img src="assets/images/specialty1.png" alt="Selected coffee beans" class="specialty__img">
                     <h3 class="specialty__title">Selected Coffee</h3>
                     <p class="specialty__description">We select the best premium coffee,for a true taste.</p>
                 </div>
 
-                <div class="specialty__group specialty__line">
-                    <img src="assets/images/specialty2.png" alt="SeeMore" class="specialty__img">
+                <div class="specialty__group specialty__line reveal">
+                    <img src="assets/images/specialty2.png" alt="Freshly baked cookies" class="specialty__img">
                     <h3 class="specialty__title">Delicious Cookies</h3>
                     <p class="specialty__description">Enjoy your coffee with some hot cookies.</p>
                 </div>
 
-                <div class="specialty__group ">
-                    <img src="assets/images/specialty3.png" alt="SeeMore" class="specialty__img">
+                <div class="specialty__group reveal">
+                    <img src="assets/images/specialty3.png" alt="Coffee enjoyed at home" class="specialty__img">
                     <h3 class="specialty__title">Enjoy at Home</h3>
                     <p class="specialty__description">Enjoy the best coffee in the comfort of your home.</p>
                 </div>
@@ -292,9 +326,9 @@
                     </div>
                 </article>
 
-                <article class="products__card  all">
+                <article class="products__card cake all">
                     <div class="products__shape">
-                        <img src="assets/images/cake4.png" alt="cake" class="products__img">
+                        <img src="assets/images/cake4.png" alt="Milk cake" class="products__img">
                     </div>
                     <div class="products_data">
                         <h2 class="products__Price">$12</h2>
@@ -321,7 +355,7 @@
                 <img src="assets/images/quality2.png" alt="quality-small-image" class="quality__img-small">
             </div>
 
-            <div class="quality__data">
+            <div class="quality__data reveal">
                 <h1 class="quality__title">Premium Coffee</h1>
                 <h2 class="quality__price">$94.99</h2>
                 <span class="quality__special">Especial Price</span>
@@ -360,9 +394,9 @@
                 Our Blogs Coffee with trending topic for this week
             </h2>
             <div class="blog__content grid">
-                <article class="blog__card">
+                <article class="blog__card reveal">
                     <div class="blog__image">
-                        <img src="assets/images/blog1.png" alt="Blog-image" class="blog__img">
+                        <img src="assets/images/blog1.png" alt="10 coffee recommendations" class="blog__img">
                         <a href="#" class="blog__button">
                             <i class="ri-arrow-right-fill"></i>
                         </a>
@@ -388,9 +422,9 @@
                     </div>
                 </article>
 
-                <article class="blog__card">
+                <article class="blog__card reveal">
                     <div class="blog__image">
-                        <img src="assets/images/blog2.png" alt="Blog-image" class="blog__img">
+                        <img src="assets/images/blog2.png" alt="12 benefits of drinking coffee" class="blog__img">
                         <a href="#" class="blog__button">
                             <i class="ri-arrow-right-fill"></i>
                         </a>
@@ -412,6 +446,70 @@
                                 <i class="ri-eye-line"></i>
                                 <span>254.1k</span>
                             </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================== TESTIMONIALS ===============================-->
+    <section class="testimonial section" id="testimonial">
+        <div class="container">
+            <h2 class="section__title">
+                What our coffee lovers say about us
+            </h2>
+            <div class="testimonial__container grid">
+                <article class="testimonial__card reveal">
+                    <i class="ri-double-quotes-l testimonial__quote"></i>
+                    <p class="testimonial__text">
+                        Easily the best coffee I have ordered online. The beans arrived fresh and the
+                        aroma filled my whole kitchen. I am a customer for life.
+                    </p>
+                    <div class="testimonial__rating" aria-label="Rated 5 out of 5">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <div class="testimonial__profile">
+                        <span class="testimonial__avatar" aria-hidden="true">SM</span>
+                        <div>
+                            <h3 class="testimonial__name">Sofia Martins</h3>
+                            <span class="testimonial__role">Home Barista</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial__card reveal">
+                    <i class="ri-double-quotes-l testimonial__quote"></i>
+                    <p class="testimonial__text">
+                        The premium kettle bundle is gorgeous and the coffee tastes incredible. Fast
+                        delivery and beautiful packaging — worth every penny.
+                    </p>
+                    <div class="testimonial__rating" aria-label="Rated 5 out of 5">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <div class="testimonial__profile">
+                        <span class="testimonial__avatar" aria-hidden="true">DK</span>
+                        <div>
+                            <h3 class="testimonial__name">David Kim</h3>
+                            <span class="testimonial__role">Coffee Enthusiast</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial__card reveal">
+                    <i class="ri-double-quotes-l testimonial__quote"></i>
+                    <p class="testimonial__text">
+                        I run a small café and these beans raised the bar for our whole menu. Consistent
+                        quality, every single batch. Highly recommended.
+                    </p>
+                    <div class="testimonial__rating" aria-label="Rated 5 out of 5">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <div class="testimonial__profile">
+                        <span class="testimonial__avatar" aria-hidden="true">AR</span>
+                        <div>
+                            <h3 class="testimonial__name">Amara Reyes</h3>
+                            <span class="testimonial__role">Café Owner</span>
                         </div>
                     </div>
                 </article>
