@@ -16,6 +16,54 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 
+    <!--    IDENTITY / CREDIT: this demo site credits its creator back to the portfolio entity hub.
+            The Person @id below must stay byte-identical to https://portfolio.alodh.in (#person). -->
+    <link rel="author" type="text/plain" href="/humans.txt">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://premium-coffee-by-aniket-lodh.netlify.app/#website",
+                "name": "Premium Coffee",
+                "url": "https://premium-coffee-by-aniket-lodh.netlify.app/",
+                "description": "A personal demo coffee-shop landing page built by Aniket Lodh (Alodh) to showcase responsive front-end and UI design work.",
+                "creator": { "@id": "https://portfolio.alodh.in/#person" },
+                "author": { "@id": "https://portfolio.alodh.in/#person" }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://portfolio.alodh.in/#person",
+                "name": "Aniket Lodh",
+                "alternateName": "Alodh",
+                "url": "https://portfolio.alodh.in/",
+                "jobTitle": "Freelance Software Developer",
+                "description": "Freelance software developer specializing in custom WordPress themes, web design, app development, and full-stack development. Available for new client engagements.",
+                "sameAs": [
+                    "https://www.linkedin.com/in/aniket-lodh-bb6403229/",
+                    "https://github.com/Aniket-lodh",
+                    "https://peerlist.io/aniket_lodh",
+                    "https://www.producthunt.com/@aniketlodh",
+                    "https://stackoverflow.com/users/27754845/aniket"
+                ],
+                "knowsAbout": [
+                    "Web Development",
+                    "WordPress Development",
+                    "Custom WordPress Themes",
+                    "PHP",
+                    "JavaScript",
+                    "Full-Stack Development",
+                    "App Development",
+                    "Web Design",
+                    "Software Development",
+                    "Front-End Development"
+                ]
+            }
+        ]
+    }
+    </script>
+
     <!--    LINKING THE BASE SCRIPT FILE-->
     <script defer src="./assets/scripts/main.js"></script>
 </head>
