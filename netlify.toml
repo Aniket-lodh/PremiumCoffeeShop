@@ -1,0 +1,9 @@
+# Old Netlify subdomain -> new custom domain (permanent move).
+# force = true is required so the redirect overrides the deployed static files;
+# without it Netlify would serve index.html for "/" instead of redirecting.
+# :splat carries the rest of the path/hash/query through to the new domain.
+[[redirects]]
+  from = "https://premium-coffee-by-aniket-lodh.netlify.app/*"
+  to = "https://brew.alodh.in/:splat"
+  status = 301
+  force = true
