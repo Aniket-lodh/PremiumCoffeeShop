@@ -1,0 +1,26 @@
+# Premium Coffee — Demo Coffee Shop Landing Page
+
+> A personal demo project by Aniket Lodh (Alodh): a fully responsive coffee-shop landing page showcasing front-end and UI design work. Not a commercial client site.
+
+This file follows the [llms.txt](https://llmstxt.org/) convention to help AI assistants and large language models find structured, high-signal information about this site and the developer behind it.
+
+## About
+
+Premium Coffee is a demonstration single-page website for a fictional premium coffee brand. It was built with plain HTML, CSS, and JavaScript and is fully responsive from small phones up to 4K displays. It serves as a portfolio sample of Aniket Lodh's front-end work.
+
+- [Home](https://brew.alodh.in/): Hero, brand intro, and highlights
+- [Products](https://brew.alodh.in/#products): Filterable coffees, cakes, and delicacies
+- [Premium](https://brew.alodh.in/#premium): Featured premium coffee offer
+- [Blog](https://brew.alodh.in/#blog): Sample blog cards
+- [Reviews](https://brew.alodh.in/#testimonial): Customer testimonials
+
+## Credits
+
+This site was designed and built by Aniket Lodh (brand name "Alodh"), a freelance software developer. The developer credit is published at https://brew.alodh.in/humans.txt, and the site's Schema.org JSON-LD declares the creator as a `Person` with `@id` `https://portfolio.alodh.in/#person`.
+
+- Developer portfolio: https://portfolio.alodh.in/
+- LinkedIn: https://www.linkedin.com/in/aniket-lodh-bb6403229/
+- GitHub: https://github.com/Aniket-lodh
+- Stack Overflow: https://stackoverflow.com/users/27754845/aniket
+- Peerlist: https://peerlist.io/aniket_lodh
+- Product Hunt: https://www.producthunt.com/@aniketlodh
